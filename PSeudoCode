@@ -1,0 +1,31 @@
+What Works:
+-App can scrape (user must 1st go to "/scrape" then return to "/"
+-App can GET "saved articles" by clicking "get saved articles" button
+-App allows user to comment on Articles by clicking on any Article (<p>)
+-User can GET ARTICLES and view if they have comments
+    -if article has comments go to "/articles/:id" to view in JSON
+-User can GET ALL Articles in JSON by going to "/articles"
+
+
+Things to do:
+-Add Save/Delete Button to Articles
+    -use queries to GET POST
+-Add Delete button to Comments
+-Improve overall UI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

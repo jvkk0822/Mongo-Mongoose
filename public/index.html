@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Mongoose Scraper</title>
+        <style>
+            body {
+                background-color: #F2F6D0
+            }
+
+            #wrapper {
+                width: 960px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 5%;
+            }
+
+            #articles {
+                display: inline-block;
+                overflow: auto;
+                width: 60%;
+                height: 700px;
+            }
+
+            #notes {
+                float: right;
+                width: 30%;
+            }
+
+            textarea,
+            input {
+                display: block;
+                width: 100%;
+                background-color: #FCF5C7;
+            }
+
+            input {
+                height: 36px;
+                font-size: 24px;
+            }
+
+            textarea {
+                height: 200px;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <h1>Comment on Articles</h1>
+            <button id="get-saved">Go To Saved Articles</button>
+            <tbody>
+                <!--This is where the saved articles will go-->
+            </tbody>
+            <button id="scrapeButton">Scraper(does not work)</button>
+            <h3>User must manually got to "/scrape" in URL first</h3>
+            <h3>In order to view scraped articles go to "/articles"</h3>
+            <h3>In order to see comments go to "/articles/:id" (_id of Article object)</h3>
+            <h2><i>Mongoose Scraping</i></h2>
+            <div id="saved"></div>
+            <div id="articles"></div>
+            <div id="comments"></div>
+
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+
+
+</html>
